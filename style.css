@@ -1,0 +1,244 @@
+@media (max-width: 768px) {
+    #hero {
+        min-height: 80vh;
+        background-position: center top;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+/* Colores */
+
+}
+:root {
+    --color-primary: #696a6b;
+    --color-secondary: #EFB400;
+    --color-dark: #1F1F1F;
+    --color-light: #F5F5F5;
+}
+
+/*  Tipografías */
+
+#hero h1,
+#hero p {
+    font-weight: 600;
+    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.75);
+}
+
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif !important;  
+}
+
+/* Hero */
+
+#hero {
+    color: white;
+    padding: 120px 0;
+}
+
+#hero h1 span {
+    color: var(--color-secondary);
+}
+.hero-section {
+    text-align: left;
+}
+
+
+/* Botón Ver CV*/
+
+.btn-vercv {
+    display: block;
+    margin: 0 auto; /* centra horizontalmente */
+    padding: 8px 60px;
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: all 0.25s ease;
+}
+
+.btn-vercv:hover {
+    background-color: #cfa000;
+    color: var(--color-dark);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+/* Espaciado entre el botón Ver CV y los badges */
+#btn-enviarcv {
+    margin-bottom: 6rem;
+}
+
+/* Quitar subrayado del enlace que envuelve el botón */
+#button a {
+    text-decoration: none !important;
+}
+
+/*  carousel */
+
+.custom-carousel-btn{
+    width: 60px;
+    opacity: 1;
+}
+
+/* La caja blanca con borde y sombra */
+
+.control-box {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6; /* Borde sutil gris */
+    border-radius: 8px;        /* Bordes redondeados */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Cambiar el color de la flecha de blanco a negro */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1) grayscale(100%) brightness(0);
+    width: 25px;
+    height: 25px;
+}
+
+/* Efecto al pasar el mouse*/
+
+.control-box:hover {
+    background-color: #f8f9fa;
+    border-color: #000;
+}
+
+
+
+/* Proyectos */
+
+.project-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform .3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Hablemos */
+
+#contacto {
+    background: #F5F5F5;
+    padding: 80px 0;
+}
+
+/* Botón principal (Enviar) */
+.btn-enviar {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+    border: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #cfa000; /* versión más oscura del secundario */
+    color: var(--color-dark);
+}
+
+/* Botón secundario (Cancelar) */
+
+.btn-cancelar {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-cancelar:hover {
+    background-color: #4f5051; /* versión más oscura del primario */
+    color: white;
+}
+
+/* Footer */
+
+.footer {
+    background: var(--color-dark);
+    color: white;
+    padding: 20px 0;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer-social-links {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.footer-social-links a {
+    color: #ffffff;
+}
+
+.footer-social-links a:hover {
+    color: #EFB400;
+}
+
+/* Espaciado de las secciones respecto del navbar*/
+
+html {
+  scroll-padding-top: 80px; /* Ajusta según la altura real del navbar */
+}
+
+/* Badges estilo Disegrafico */
+.badges-container .badge {
+    background-color: var(--color-light); /* #F5F5F5 */
+    color: var(--color-dark); /* #1F1F1F */
+    border: 1px solid var(--color-primary); /* #696A6B */
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+
+/* Hover */
+.badges-container .badge:hover {
+    background-color: var(--color-secondary); /* #EFB400 */
+    color: var(--color-dark);
+    border-color: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+/* Espaciado entre botón y badges */
+#button {
+    margin-top: 2rem;
+}
+
+/* Alineación a la izquierda */
+.badges-container {
+    justify-content: flex-start;
+}
